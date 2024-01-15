@@ -155,7 +155,7 @@ class TodoMainAbl {
 
   async updateTodo(uri, session, uuAppErrorMap = {}) {
     // HDS 1
-    return await UuAppWorkspace.loadBasicData(uri, session, uuAppErrorMap);
+    return {};
   }
 }
 
