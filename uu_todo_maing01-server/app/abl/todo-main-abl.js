@@ -147,6 +147,11 @@ class TodoMainAbl {
     // HDS 2
     return dtoOut;
   }
+
+  async createTodo(uri, session, uuAppErrorMap = {}) {
+    // HDS 1
+    return await UuAppWorkspace.loadBasicData(uri, session, uuAppErrorMap);
+  }
 }
 
 module.exports = new TodoMainAbl();
