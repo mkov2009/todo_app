@@ -148,6 +148,11 @@ class TodoMainAbl {
     return dtoOut;
   }
 
+  async createTodo(uri, session, uuAppErrorMap = {}) {
+    // HDS 1
+    return await UuAppWorkspace.loadBasicData(uri, session, uuAppErrorMap);
+  }
+
   async updateTodo(uri, session, uuAppErrorMap = {}) {
     // HDS 1
     return await UuAppWorkspace.loadBasicData(uri, session, uuAppErrorMap);
